@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Sunday Sessions</title>
+
+    <link href="assets/css/hover_pack.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+   
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(34.052234, -118.243685), // LA
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#74c9be'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+    </script>
+    
+    
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
+    
+  </head>
+
+  <body>
+
+<!-- Header -->
+    <div class="header-logo">
+    <a href="http://lvrt.com" target="_blank"><img class="logo" src="assets/img/logo.jpg"></a>
+	<div class="socialIcons">
+				<a href="https://www.instagram.com/sunseshla/" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/SunSeshLA/home" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/sunseshla" target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</div>
+
+<!-- Headwrapper -->
+    <div id="headerwrap">
+    	<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2 mt">
+					<h1 class="animation slideDown">A Los Angeles based collective. Bringing artists together to rise up and be heard above the mass-produced noise.</h1>
+    				<p class="mt"><button type="button" class="btn btn-cta btn-lg">LEARN MORE</button></p>
+				</div>
+				
+			</div><!-- /row -->
+    	</div><!-- /container -->
+    </div> <!-- /headerwrap -->
+
+	<!-- What's Happening -->    
+	<div class="container">	
+
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>What's Happening?</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt">
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/music.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+					  	<p class="b-from-right b-animate b-delay03">Sol</p>
+					</div>
+				</a>
+				<p>Live Music</p>
+				<p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<hr-d>
+				<p class="time"><i class="fa fa-comment-o"></i> 3 | <i class="fa fa-calendar"></i> 20th July</p>
+			</div><!-- col-lg-4 -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/comedy.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+					  	<p class="b-from-right b-animate b-delay03">Julian Michael</p>
+					</div>
+				</a>
+				<p>Standup Comedy</p>
+				<p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<hr-d>
+				<p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 24th June</p>
+			</div><!-- col-lg-4 -->
+			
+			<div class="col-lg-4 col-md-4 col-xs-12 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/more.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03"><i class="fa fa-heart" aria-hidden="true"></i></h4>
+					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					</div>
+				</a>
+				<p>Entertainment</p>
+				<p class="lead">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<hr-d>
+				<p class="time"><i class="fa fa-comment-o"></i> 1 | <i class="fa fa-calendar"></i> 15th May</p>
+			</div><!-- col-lg-4 -->
+			
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<!-- CTA1 -->    
+    <div id="cta01">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>Redefining how you create, share and support your favourite art.
+                    The entertainent platform that puts the power in your hands.</h2>
+    				<a href="http://lvrt.com/" target="_blank"><button type="button" class="btn btn-cta btn-lg">LEARN MORE</button></a>
+    			</div>
+    		</div><!-- /row -->
+    	</div><!-- /container -->
+    </div>
+
+	<!-- Portfolio -->    
+	<div class="container">
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Latest Perfomers</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio1.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Heather Thomson</h4>
+					  	<p class="b-from-right b-animate b-delay03">@casualvelvet</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio2.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Brian Davis</h4>
+					  	<p class="b-from-right b-animate b-delay03">@PlayingForPennies</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio3.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Marushka Tihane</h4>
+					  	<p class="b-from-right b-animate b-delay03">@marushkamusic</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio4.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Luci Music</h4>
+					  	<p class="b-from-right b-animate b-delay03">@lovelucimusic</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio5.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Evan Ryan</h4>
+					  	<p class="b-from-right b-animate b-delay03">@evanryandrums</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+			<div class="col-lg-4 desc">
+				<a class="b-link-fade b-animate-go" href="#"><img width="350" src="assets/img/portfolio/portfolio6.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Undecided Future</h4>
+					  	<p class="b-from-right b-animate b-delay03">@undecided_future</p>
+					</div>
+				</a>
+				<p><i class="fa fa-heart-o"></i>
+				<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+				</p>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt centered">
+			<div class="col-lg-4 col-lg-offset-4">
+    			<button type="button" class="btn btn-theme btn-lg">VIEW MORE</button>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<!-- Mission -->    
+	<div id="black">
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-4 col-lg-offset-4">
+					<h3>Our Mission</h3>
+					<hr>
+				</div><!-- /col-lg-4 -->
+			</div><!-- /row -->
+			
+			<div class="row mt">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><i>LVRT</i> (Love Art) runs the entire business and legal backend of the Entertainment Industry with software and Internet services. LVRT is a 3-sided platform with a specific mission and execution strategy for each of 3 customer groups: Artists, Consumers, and Advertisers.<br> <i>Sunday Session </i> provides a platform to upcoming artists and brings them together.</p>
+				</div><! --/col-lg-8 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /black -->
+
+
+	<!-- Customers -->    
+    <div id="white">
+	    <div class="container">
+	    	<div class="row mt">
+	    		<div class="col-lg-4 col-lg-offset-4 centered">
+	    			<h3>Customer Groups</h3>
+	    			<hr>
+	    		</div>
+	    	</div>
+	    	<div class="row mt">
+	    		<div class="col-lg-4">
+	    			<p class="capitalize">1</p>
+	    			<h4>Artists</h4>
+	    			<p>LVRT's mission for Artists is to help them get discovered and ensure they are fairly paid for their creative works. This is accomplished through a suite of tools like Quickbooks, LegalZoom and Twitter rolled into one and focused on Artists' needs.</p>
+	    		</div>
+	    		<div class="col-lg-4">
+	    			<p class="capitalize">2</p>
+	    			<h4>Consumers</h4>
+	    			<p>LVRT's mission for Consumers is to give them access to quality content, when and where they want, with simple yet powerful user interfaces and convenient payment methods. This is accomplished through a distribution service like Spotify, Netflix and iTunes combined.</p>
+	    		</div>
+	    		<div class="col-lg-4">
+	    			<p class="capitalize">3</p>
+	    			<h4>Advertisers</h4>
+	    			<p>LVRT's mission for Advertisers is to help them reach their target demographics with meaningful marketing messages. This is accomplished through an ad targeting system and tools for product placement.</p>
+	    		</div>    	
+	
+	    	</div><!-- /row -->
+	    </div><!-- /container -->
+    </div><!-- /white -->
+
+	<!-- cta2 -->    
+    <div id="cta02">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2 class="animation slideDown">Live streaming coming soon...</h2>
+    				<a href="http://www.alerttheglobe.com/" target="_blank"><button type="button" class="btn btn-cta btn-lg">Go Live!</button></a>
+    			</div>
+    		</div><!-- /row -->
+    	</div><!-- /container -->
+    </div>
+
+	<!-- Testimonial Caraousel-->    
+
+	<div class="container">
+    	<div class="row mt">
+    		<div class="col-lg-4 col-lg-offset-4 centered">
+    			<h3>Testimonials</h3>
+    			<hr>
+    		</div>
+    	</div><! --/row -->
+	
+		<div class="row mt">
+			<div class="col-lg-8 col-lg-offset-2 centered">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">				
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+						  <h2>Hey y'all, so excited to have our first show ever with LVRT! Thx for all your support!</h2>
+						  <h5>Jonathan Burkes‎</h5><br>
+						</div>
+						
+						<div class="item">
+						  <h2>Had a fantastic time Sunday night, thanks so much to everyone for making it such an amazing experience! See you soon!</h2>
+						  <h5>‎Mark Noel Miller‎</h5>
+						</div>
+
+						<div class="item">
+						  <h2>You should definitely check out the Sunseshla livestream‬ on alerttheglobe.com starting at 8pm PST. Tonight is going to be AMAZING!</h2>
+						  <h5>‎Sami Grisafe - Musician</h5>
+						</div>
+					</div><!-- /carousel-inner -->
+				
+				</div><! --/carousel-example -->		
+			</div><!-- /col-lg-8 -->
+		</div><! --/row -->
+	</div><!-- /container -->
+
+
+	<!-- Contact -->    
+
+	<div id="white">
+		<div class="container">
+	    	<div class="row mt">
+	    		<div class="col-lg-4 col-lg-offset-4 centered">
+	    			<h3>Contact Us</h3>
+	    			<hr>
+	    		</div>
+	    	</div><! --/row -->
+		</div><!-- /container -->
+		<!-- Map -->	
+	<div id="map"></div>	
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	</div><!-- /white -->
+
+
+
+	
+	<!-- cta3 -->    
+	<div id="cta-bar">
+		<div class="container">
+			<div class="row centered">
+				<a href="http://lvrt.com/lvrnew.html" target="_blank"><h4>Want to be a part of the Revolution?</h4></a>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /cta-bar -->
+	
+	<!-- Footer -->    
+	
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<!-- ADDRESS -->
+				<div class="col-lg-4">
+					<h4>Venue</h4>
+					<p>
+						--Invite Only--<br/>
+						Los Angeles, CA<br/>
+						USA 90001<br/>
+					</p>
+					<p>
+						<i class="fa fa-mobile"></i> +1 123.456.7890<br/>
+						<i class="fa fa-envelope-o"></i> matty@yourdomain.com
+					</p>
+				</div>
+				
+				<!-- LATEST POSTS -->
+				<div class="col-lg-4">
+					<h4>Latest Posts</h4>
+					<p>
+						<i class="fa fa-angle-right"></i> A post with an image<br/>
+						<i class="fa fa-angle-right"></i> Other post with a video<br/>
+						<i class="fa fa-angle-right"></i> A full width post<br/>
+						<i class="fa fa-angle-right"></i> We talk about something nice<br/>
+						<i class="fa fa-angle-right"></i> Yet another single post<br/>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<!-- UPCOMING -->
+				<div class="col-lg-4">
+					<h4>Upcoming Artists</h4>
+					<a href="#"><img class="img-responsive" id="upcoming" src="assets/img/portfolio/upcoming.jpg" alt="" /></a>
+				</div><!-- /col-lg-4 -->
+				
+				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+	<!-- Copyright -->
+	<div class="copyright">
+		<p>Copyright&copy; 2016</p>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+
+
+  	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>    
+  
+  </body>
+</html>
